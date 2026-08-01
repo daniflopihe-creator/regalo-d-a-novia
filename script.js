@@ -8,7 +8,12 @@ const collageStyle = document.createElement('link');
 collageStyle.rel = 'stylesheet'; collageStyle.href = 'collage.css'; document.head.append(collageStyle);
 const compactStyle = document.createElement('link');
 compactStyle.rel = 'stylesheet'; compactStyle.href = 'mobile-collage.css'; document.head.append(compactStyle);
+const phoneStyle = document.createElement('link');
+phoneStyle.rel = 'stylesheet'; phoneStyle.href = 'phone.css'; document.head.append(phoneStyle);
+const fruityStyle = document.createElement('link');
+fruityStyle.rel = 'stylesheet'; fruityStyle.href = 'fruity.css'; document.head.append(fruityStyle);
 document.querySelector('.board').insertAdjacentHTML('beforeend','<span class="fruit peach">🍑</span><span class="fruit cherries">🍒</span><span class="fruit strawberry">🍓</span><i class="sketch one"></i><i class="sketch two"></i>');
+document.querySelector('.board').insertAdjacentHTML('beforeend','<span class="peach-more p1">🍑</span><span class="peach-more p2">🍑</span><span class="peach-more p3">🍑</span><span class="peach-more p4">🍑</span>');
 
 heart.addEventListener('click', () => {
   heart.classList.add('boom');
